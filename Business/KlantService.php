@@ -1,9 +1,10 @@
 <?php
-//Sarah: check this 
+//Sarah: check this- is ok 
 
-require_once ("datalaag/klantDAO.php");
+require_once ("Data/KlantDAO.php");
 
 class klantService{
+    /*Sarah: werkt!*/
     public function klantToevoegen($naam, $voornaam, $straat, $huisnummer,
             $postcode, $woonplaats, $email, $wachtwoord, $tel) {
         $klantDAO=new klantDAO();
