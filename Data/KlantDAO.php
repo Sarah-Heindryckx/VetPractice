@@ -1,7 +1,7 @@
 <?php
 
 require_once("./Entities/Klant.php");
-require_once ("./datalaag/dbconfigclass.php");
+require_once ("./Data/Dbconfig.php");
 
 class KlantDAO {
     /* klanten per ID ophalen */
