@@ -4,6 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Dierenartspraktijk</title>
         <link type="text/css" rel="stylesheet" href="../Css/style.css"/>
+        <link href="../jq/jquery-ui.css" rel="stylesheet"/>
     </head>
 
     <body>
@@ -39,7 +40,8 @@
                                         <input type="text" size="50" name="woonplaats" /><br/>
 
                                         <p>Datum consultatie :<br />
-                                            <input type="text" size="50" name="datum" /><br />         
+
+                                            Datum: <input type="text" id="datepicker"/></p><br>
 
                                             <p>Naam Dier:<br />
                                                 <input type="text" size="50" name="naamDier" /><br/>
@@ -64,48 +66,56 @@
                                             </p> 
 
                                             <input type="submit" value="Nieuwe Klant" />
-                                        </p>  
+                                    </p>  
 
 
-                                        </fieldset>
-                                        <fieldset>
+                                    </fieldset>
+                                    <fieldset>
 
-                                            <legend>  </legend>
-                                            <br/>
-                                        </fieldset>
+                                        <legend>  </legend>
+                                        <br/>
+                                    </fieldset>
 
-                                        </form>
-
-
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <br />
+                                    </form>
 
 
-                                        </div>
-
-                                        <div id="content-secondary">
-                                            <p><br />
-                                                Datum<br />
-                                                Uur<br />
-                                                Ingelogd door<br />
-                                                Log Uit </p>
-                                            <br/>
-                                            <p> Log In </p><br />
-                                            <p>Search</p>
-                                            <input name="zoekterm" type="search" />
-
-                                            <p> <img src="" alt=""/>   </p>
-                                        </div>
-
-                                        <div id="footer">
-                                            <p> Dierenartsenpraktijk - Vlamingstraat - Wevelgem              <br/> Openingsuren: Van ma tot vrij 8h30 - 17h /  Zavom: 8h tot 12h</p>
-                                        </div>
-
-                                        </div>
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
 
 
-                                        </body>
+                                    </div>
 
-                                        </html>
+                                    <div id="content-secondary">
+                                        <p><br />
+                                            Datum<br />
+                                            Uur<br />
+                                            Ingelogd door<br />
+                                            Log Uit </p>
+                                        <br/>
+                                        <p> Log In </p><br />
+                                        <p>Search</p>
+                                        <input name="zoekterm" type="search" />
+
+                                        <p> <img src="" alt=""/>   </p>
+                                    </div>
+
+                                    <div id="footer">
+                                        <p> Dierenartsenpraktijk - Vlamingstraat - Wevelgem              <br/> Openingsuren: Van ma tot vrij 8h30 - 17h /  Zavom: 8h tot 12h</p>
+                                    </div>
+
+                                    </div>
+                                    <script src="../jq/jquery.js"></script>
+                                    <script src="../jq/jquery-ui.js"></script>
+                                    <script>
+                                        $(function () {
+                                            $("#datepicker").datepicker({
+                                                dateFormat: "dd/mm/yy"
+                                            });
+                                        });
+                                    </script>
+
+                                    </body>
+
+                                    </html>

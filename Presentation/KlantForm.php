@@ -5,7 +5,7 @@ nog na te kijken: br weg doen - css aanpassen-->
     <head>
         <meta charset="UTF-8">
         <title>Klant Toevoegen</title>
-        <link href=".\Css\Style.css" rel="stylesheet"> <!-- deze link is correct, mapje css toegevoegd, style zit daar in -->
+        <link href="Css/Style.css" rel="stylesheet"> <!-- deze link is correct, mapje css toegevoegd, style zit daar in -->
     </head>
     <body>
         <div id="page">
