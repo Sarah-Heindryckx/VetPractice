@@ -1,9 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!DOCTYPE html>
+<html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Dierenartspraktijk</title>
-        <link type="text/css" rel="stylesheet" href="../Css/style.css"/>
+        <link type="text/css" rel="stylesheet" href="./Css/style.css"/>
     </head>
 
     <body>
@@ -25,36 +25,31 @@
 
             <div id="content-primary">
                 <h1>Gegevens dier</h1>       
-                <form>
+                <form method="post" action="./voegdiertoe.php?action=process">
                     <fieldset>
                         <legend> Gegevens DIER </legend>
                         <br/>
-                        DierNr :<br />
-                        <input type="text" size="10" name="Dier_Id" /><br />
-                        Diersoort  :<br />
-                        <input type="text" size="50" name="diersoort" /><br />
-                        Ras  :<br />
+                        
+                        <label for="soort">Diersoort:</label><br />
+                        <input type="text" size="50" name="soort" /><br />
+                        <label for="ras">Ras:</label><br />
                         <input type="text" size="50" name="ras" /><br />
-                        Naam dier (roepnaam):<br />
-                        <input type="text" size="50" name="naamDier" /><br />
-                        Chipnummer:<br />
+                        <label for="naam">Naam:</label><br />
+                        <input type="text" size="50" name="naam" /><br />
+                        <label for="chipnr">Chipnummer:</label><br />
                         <input type="text" size="50" name="chipnr" /><br />
-                        Paspoortnummer:<br />
+                        <label for="paspoortnr">Paspoortnummer:</label><br />
                         <input type="text" size="50" name="paspoortnr" /><br />
-
-                        Stamboomnaam(optioneel):<br />
+                        <label for="stamboomnaam">Stamboomnaam:</label><br />
                         <input type="text" size="50" name="stamboomnaam" /><br />
-                        Geboortedatum :<br />
-                        <input type="text" size="50" name="gebdatum" /><br />
-
-                        Kleur (optioneel):<br />
+                        <label for="gebdatum">Geboortedatum:</label><br />
+                        <input type="text" size="50" name="geboortedatum" /><br />
+                        <label for="kleur">Kleur:</label><br />
                         <input type="text" size="50" name="kleur" /><br />
-                        Medische beeldvorming (optioneel):<br />
+                        <label for="medbeeld">Medische beeldvorming:</label><br />
                         <input type="text" size="50" name="medbeeld" /><br />
                         <br />
                         <input type="submit" value="Wijziging Opslaan" />
-                        <br /><br/>
-                        <input type="submit" value="Nieuw Dier" />
                         <br /><br/>
                         <input type="submit" value="Terug naar Overzicht" />
                         <br />

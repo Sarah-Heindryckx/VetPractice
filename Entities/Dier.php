@@ -13,8 +13,8 @@ class dier {
     private $klantId;
     /*Sarah: klantId bij dier, geen dierId bbij klant anders maar 1 dier per klant */
     
-    /*Sarah: nog aanpassen met nieuwe create en private __construct*/
-    public function __construct($id, $naam, $stamboomnaam, $soort, $ras,$geboortedatum, $gewicht,
+   
+    public function __construct($id, $naam, $stamboomnaam, $soort, $ras,$geboortedatum, 
             $chipnummer, $paspoortnummer, $kleur,  $klantId) {
                 $this->id=$id;
                 $this->naam=$naam;
@@ -22,7 +22,6 @@ class dier {
                 $this->soort=$soort;
                 $this->ras=$ras;
                 $this->geboortedatum=$geboortedatum;
-                $this->gewicht=$gewicht;
                 $this->chipnummer=$chipnummer;
                 $this->paspoortnummer=$paspoortnummer;
                 $this->kleur=$kleur;

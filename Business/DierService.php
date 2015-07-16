@@ -1,5 +1,5 @@
 <?php
-
+require_once '.\Data\DierDao.php';
 class dierService {
     public function dierTonen($id) {
         $dierDAO= new dierDAO();
@@ -23,5 +23,10 @@ class dierService {
                 
         
     }
+    public function dierToevoegen($dier) {
+        $dao=new DierDAO();
+        $dao->create($dier);
+    } 
     
 }
+
