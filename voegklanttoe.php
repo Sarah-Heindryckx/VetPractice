@@ -1,5 +1,5 @@
 <?php
-//Sarah: check this 
+//Sarah: check this -> ok 
 require_once (".\Business\KlantService.php");
 
 if (isset($_GET['action']) && $_GET["action"] == "process") {
